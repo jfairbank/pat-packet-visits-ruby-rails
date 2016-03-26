@@ -1,9 +1,3 @@
-<style>
-p.continue {
-  margin-top: -16px;
-  text-indent: 2em;
-}
-</style>
 # Pat Packet Visits Ruby Rails
 
 ## Intro
@@ -68,18 +62,18 @@ and POST. Other messages were completely garbled.
 > Pam answered, "In the world of WAN distribution — and even LAN — packages
 > typically conform to a specific protocol for their messages. I'm sure you're
 > already familiar with this concept in your type of deliveries.<br>
-> <p class="continue">
+>
 > "In this case, these messages adhere to the HTTP protocol. A
 > standardized format for requesting information and replying with
 > information."
-> </p>
+>
  
 > "I see," acknowledged Pat. "So how do the patterns in the format work?"
  
 > "Good question," replied Pam. "As I mentioned, HTTP messages are usually
 > grouped into requests and replies, which have similarities and differences in
 > their formats.
-> <p class="continue">
+>
 > "As you might guess, requests are outgoing packages, so they require specific
 > fields to properly describe the request. Their format looks like this: on the
 > first line is the method of the request, the resource being requested, and the
@@ -87,7 +81,7 @@ and POST. Other messages were completely garbled.
 > extra information or limitations on the request. After skipping a
 > line, the request may supply an optional message body to further qualify the
 > resource being requested."
-> </p>
+>
  
 > "That's a lot of information. What types of methods are there?" inquired Pat.
  
@@ -95,27 +89,23 @@ and POST. Other messages were completely garbled.
 > we see from our clients are GET, POST, PUT, and DELETE. Methods indicate to
 > the receiver the nature of the request so they know how to process the
 > request and generate an appropriate reply package.
-> <p class="continue">
+>
 > GET requests are the most basic and indicate a simple request for the
 > resource.
-> </p>
-> <p class="continue">
+>
 > POST requests indicate that the requester wants to provide some information to
 > the receiver, but the requester isn't too sure <em>where</em> to supply the
 > information. For example, if a requester wanted to purchase an item from a
 > store, they could send their order details to a generic resource name like
 > '/checkout'. Then, the store would reply with an acknowledgment of the order
 > along with a receipt.
-> </p>
-> <p class="continue">
+>
 > PUT requests are very similar to POST requests, but the requester typically
 > knows where to supply the information. Generally, our clients use PUT requests
 > for updating information that the receiver manages for them. For example, if a
 > store keeps track of a requester's name, then the requester can use a PUT
 > request to update their name at the store.
-> </p>
-> <p class="continue">
+>
 > Finally, DELETE requests are used to delete a resource. If a requester has
 > multiple addresses saved at a store, then they can use a DELETE request to
 > remove one of those addresses.
-> </p>
