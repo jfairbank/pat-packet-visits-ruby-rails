@@ -4,6 +4,8 @@ This is the story for the "Pat Packet Visit Ruby Rails" talk given at RailsConf
 2016 in Kansas City, MO. This story uses the journey of the courier Pat Packet
 to explain HTTP, DNS, TCP/IP, and routing.
 
+**NOTE:** This story is still in development and is subject to change.
+
 ## Abstract
 
 The eager Pat Packet just started his first job at KPS (Kernel Parcel Service).
