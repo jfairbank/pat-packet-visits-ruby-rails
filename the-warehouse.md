@@ -25,7 +25,7 @@ Pam answered, "In the world of WAN distribution — and even LAN — packages
 typically conform to a specific protocol for their messages. I'm sure you're
 already familiar with this concept in your type of deliveries.
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-"In this case, these messages adhere to the HTTP protocol. A standardized format
+"In this case, these messages adhere to the HTTP protocol, a standardized format
 for requesting information and replying with information. Even the garbled
 messages follow that format, but they've been encrypted to ensure
 confidentiality between the requester and recipient. Encrypted messages use the
