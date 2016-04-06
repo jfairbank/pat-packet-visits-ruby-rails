@@ -13,9 +13,9 @@ domain names like the host address `rubyonrails.org`. It's up to us to then use
 DNS to determine the actual address of the domain name.
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 "Sometimes we keep a copy of the address for a short time, but I couldn't find
-one for `rubyonrails.org`. We'll need to make a stop at the Resolver Kingdom in the Isp
-Continent to get the address, so let's take the UDP Express train. It's usually
-the fastest way to get there."
+one for `rubyonrails.org`. We'll need to make a stop at the Resolver Kingdom in
+the Isp Continent to get the address, so let's take the UDP Express train. It's
+usually the fastest way to get there."
 
 So, off they went to hop aboard the UDP Express to start their DNS journey.
 
@@ -85,11 +85,11 @@ Pat, visibly confused, inquired, "But these are just a bunch of addresses that
 go with other domain names like `a0.org.afilias-nst.info`. Where is an address
 for `rubyonrails.org`?"
 
-"Right&hellip; We don't keep A records on individual domain names like that. All
-we have are NS records on the NS kingdoms for the top level domains. You'll have
-to ask one of those kingdoms for more help."
+"Right… We don't keep `A` records on individual domain names like that.
+All we have are `NS` records on the NS kingdoms for the top level domains.
+You'll have to ask one of those kingdoms for more help."
 
-"A records… NS records… top level domains?" a still befuddled Pat asked.
+"`A` records… `NS` records… top level domains?" a still befuddled Pat asked.
 
 Pam stopped Pat, speaking to the clerk, "Thank you so much for your help. We'll
 be on our way."
@@ -124,7 +124,7 @@ handed it to Pat, "This will get you to your destination."
 With a smile, Pat gave his thanks. As he and Pam walked away he began to read
 the paper. His smile slowly faded away.
 
-"These are more NS records all to the same place," he exclaimed. "They start
+"These are more `NS` records all to the same place," he exclaimed. "They start
 with `ns` followed by a number and then `.gratisdns.dk`. It seems like these
 DNS kingdoms keep giving us the runaround."
 
@@ -149,12 +149,72 @@ how resolvers work to retrieve the addresses we couriers need. This iterative
 process is crucial to ensure DNS kingdoms can reasonably store the billions of
 addresses and domain names. Therefore, it has a hierarchical structure that
 starts with the root domain kingdoms. The root domain kingdoms are responsible
-for storing addresses for the domain names of the top level domain kingdoms. The
-root domain kingdoms hand out NS records 
+for storing addresses for the top level domain kingdoms.
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 "Top level domains, or TLDs for short, are just categorical names used in domain
 names. You've already seen `.org`, which is primarily used by organizations.
 Other popular TLDs are `.com`, `.net`, and `.io`, which startups love. There
 are numerous other TLDs as well.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+"The root domain kingdoms hand out `NS` records to these TLD kingdoms, which are
+like referrals. The root domain kingdoms are essentially saying, "I don't know
+where `rubyonrails.org` is, but I can direct you to someone that has a better
+shot at knowing."
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+"Next, the TLD kingdoms do something similar. Usually, a TLD kingdom only knows
+about NS kingdoms. Regular kingdoms like the Puma Kingdom will employ at least
+two NS kingdoms to advertise the `rubyonrails.org` address. In turn these NS
+kingdoms will register with the TLD kingdoms, so the TLD kingdoms can hand out
+referrals, or `NS` records, to them.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+"Finally, remember earlier when our resolver friend Ren mentioned 'authoritative
+DNS kingdoms'? These NS kingdoms — one of which we will visit next — are
+typically the authoritative kingdoms that have the final say on addresses for
+regular kingdoms. Therefore, they hand out `A` or `CNAME` records. `A` records
+are known as host records. They give the actual address for a domain name.
+`CNAME` records are like aliases. If `rubyonrails.org` wanted to advertise
+another domain name like `rubyonrailsftw.com`, then they could use a `CNAME`
+record that aliases back to `rubyonrails.org`. The benefit of this over an `A`
+record is that if their address changes, they only need to update one `A` record
+for `rubyonrails.org`. The alias, `rubyonrailsftw.com`, will still work because
+it points to whatever address `rubyonrails.org` points to.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+"Therefore, you see that the DNS kingdoms are structured in a distributed,
+hierarchical manner. They are recursive in that the higher levels of the system
+will yield to the lower levels to eventually get an address for a domain name.
+This allows addresses to be stored in a saner, more efficient manner, albeit at
+the cost of more time to retrieve an address. This delay in time to obtain an
+address, also known as latency, is also why higher levels like the resolver will
+save a copy of the address for a while after they retrieve it. If the resolver
+receives another request for the address, then they can use their copy and avoid
+the extra latency to retrieve it from an authoritative kingdom."
 
-More to come… 
+"Wow! It all makes sense now. If all the kingdoms stored all the addresses, then
+that would require a lot of storage. It would also complicate keeping addresses
+up to date at all the kingdoms."
+
+"Exactly."
+
+"Thank you for explaining that. I feel better now. Latency sounds pretty
+important, so we need to get a move on!"
+
+"No doubt. Unfortunately, we are always limited by distance. We'll do our best
+after we get the address from the last kingdom."
+
+---
+
+Pat and Pam finally arrived at one of the NS kingdoms. Like before, they entered
+a large building and met with one of the clerks. At long last, they obtained the
+address for `rubyonrails.org`. Pat was more than elated.
+
+Pat began, "Great! Now we have the address, let's hop back on the UDP Express
+to deliver the package!"
+
+Pam responded, "Well, it's not that easy."
+
+"Huh?"
+
+"HTTP packages can't be delivered via the UDP Express. We have to use the TCP
+Turboline instead. Before we can do that, we need to make sure the Puma Kingdom
+is ready for our delivery too. We need to head back to KPS and schedule the
+delivery, so let's go!"
