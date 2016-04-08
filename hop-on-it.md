@@ -150,7 +150,7 @@ remaining 8 to mask 30. That means this address encompasses all addresses from
 192.30.0.0 to 192.30.255.255.
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 "As you get closer to your destination, the CIDR address you need at each router
-station will grow more and more specific until you finally reach your
+station will usually grow more and more specific until you finally reach your
 destination."
 
 "Wow, thanks! That explains a lot. I think I have what I need then. Thank you
@@ -163,4 +163,44 @@ dashed off to the next router station.
 
 ---
 
-More to come…
+Pat became accustomed to the flow of the router stations and made more hops from
+train to train with greater ease. Pat was sure he would arrive at the Puma
+Kingdom soon. At one of his last stops, Pat confidently sauntered over to the
+next train only to find an attendant blocking the door.
+
+Pat approached the attendant, "Excuse me. I need to be on this train for my next
+destination. May I please board?"
+
+The attendant replied, "Sorry, sir. This train has reached its max passenger
+capacity. Due to CCA regulations, I cannot allow you to board."
+
+"But according to the routing table, this is the train I need. Without this
+train, I cannot deliver this package."
+
+"I understand, but regulations are regulations. You're welcome to wait at the
+station for a short time. Another train on this route may make it another two to
+three seconds. Any longer than that, though, and I will have to ask you to
+return back to your carrier."
+
+"Oh, no! Two to three seconds is too long, and why would I need to go back?"
+
+"Router stations themselves can only hold so many couriers. CCA guidelines
+dictate that to avoid congestion at stations, attendants must ask couriers after
+a short while to leave and try their delivery later."
+
+"This is an extremely important package, though! Surely, there is something you
+can do. Is there another route by chance?"
+
+Pat quickly handed the attendant the address.
+
+The attendant examined the address and thought for a moment, "Well, typically we
+prefer couriers take the shortest route to their destination, but there are
+exceptions. It's a little longer route, but you can take train AS865 and follow
+the routing table as normal from the next station."
+
+"Really? That works for me. Thank you!"
+
+Pat rushed off to the train. As he approached the boarding platform, he saw the
+doors begin to close on the train. He dove with all his might and made it in the
+train just as the doors shut. He breathed a sigh of relief and prepared for the
+final leg of his journey.
