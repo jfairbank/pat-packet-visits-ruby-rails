@@ -25,6 +25,7 @@ package.
 2. [The Warehouse](the-warehouse.md)
 3. [The Recursive Journey](the-recursive-journey.md)
 4. [Hop On It](hop-on-it.md)
+5. [Ruby Rails](ruby-rails.md)
 
 ## Legend
 
