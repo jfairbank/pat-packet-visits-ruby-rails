@@ -33,5 +33,14 @@ package.
   <dd>A physical IP-enabled device like a laptop or physical server</dd>
 
   <dt>Kingdom</dt>
-  <dd>An application-level server</dd>
+  <dd>A software-level server such as a web server or DNS server</dd>
+
+  <dt>Train</dt>
+  <dd>
+    Loosely, a broad term for connection mediums such as ethernet, fiber, and
+    wireless broadcast
+  </dd>
+
+  <dt>Router Station</dt>
+  <dd>Loosely, a combination of physical routers and switches</dd>
 </dl>
