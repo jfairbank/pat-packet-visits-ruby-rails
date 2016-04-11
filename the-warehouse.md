@@ -1,6 +1,6 @@
 # The Warehouse
 
-> 3. Illustration: Pat and Pam talking
+> 3: Illustration: Pat and Pam talking
 
 Pat arrived at the WAN warehouse and marveled at the number of packages that
 awaited delivery. He saw Pam at the back of the warehouse sifting through
@@ -16,7 +16,7 @@ Pat piped, "Yes! It's for Ruby Rails too!"
 Pam echoed Pat's enthusiasm, "Great! I was just sorting through the packages
 to get what we need."
 
-> 4. Illustration: Pat and Pam looking at a package together (maybe have an
+> 4: Illustration: Pat and Pam looking at a package together (maybe have an
 >    HTTP message on it)
 
 Pat noticed the packages were different from what he had delivered in the past.
@@ -38,7 +38,7 @@ secure HTTPS protocol."
 
 "I see," acknowledged Pat. "So how do the patterns in the HTTP format work?"
 
-> 1. Technical Slide: HTTP request
+> 1: Technical Slide: HTTP request
 
 "Good question," replied Pam. "As I mentioned, HTTP messages are usually
 grouped into requests and replies, which have similarities and differences in
@@ -54,7 +54,7 @@ being requested."
 
 "That's a lot of information. What types of methods are there?" inquired Pat.
 
-> 2. Technical Slide(s): List of methods
+> 2: Technical Slide(s): List of methods
 
 "There are several standard methods," answered Pam, "but the most common ones
 we see from our clients are GET, POST, PUT, and DELETE. Methods indicate to
@@ -84,7 +84,7 @@ request to remove one of those addresses."
 confused by the headers. What are the 'extra information or limitations' you
 mentioned?"
 
-> 3. Technical Slide: List of common headers. Point out key and value in one of
+> 3: Technical Slide: List of common headers. Point out key and value in one of
 >    the headers.
 
 "Headers are primarily useful for meta data, which basically means information
@@ -94,7 +94,7 @@ receive back their list of friends in a particular format. Therefore, the
 requester can add an 'Accept' header to ask for a reply in an exact format. It's
 still up to the recipient to honor the format request in their reply.
 
-> 4. Technical Slide: Accept header examples for html, json, and maybe another
+> 4: Technical Slide: Accept header examples for html, json, and maybe another
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 "Now, there are many more headers than methods, and a receiver can support their
@@ -107,7 +107,7 @@ application/json`.
 In addition to the 'Accept' header, there are other common headers our clients
 and their recipients use.
 
-> 5. Technical Slide: Examples for Content-Type, Host, and Content-Length
+> 5: Technical Slide: Examples for Content-Type, Host, and Content-Length
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 "The 'Content-Type' header allows a recipient to include in their reply which
@@ -125,7 +125,7 @@ message is.
 "Wow! That is a lot of options. If recipients use headers too, does that mean
 their reply packages are similar to request packages?"
 
-> 6. Technical Slide: HTTP status line
+> 6: Technical Slide: HTTP status line
 
 "Yes, the reply messages are almost the same, but instead of a request method,
 they start with a status line. A status line includes the version of HTTP, a
@@ -135,7 +135,7 @@ status code, and status description.
 codes allow a standard way to describe the type of reply. Status codes are
 simply three-digit numbers followed by a descriptive phrase.
 
-> 7. Technical Slide: 200 and 304
+> 7: Technical Slide: 200 and 304
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 "The most common status code is 200, which is usually followed by 'OK'. This
@@ -147,7 +147,7 @@ resource and that resource hasn't changed since it was last sent to the
 requester. This allows the recipient to avoid resending the message body and to
 respond more quickly to the requester.
 
-> 8. Technical Slide: 404 and 401
+> 8: Technical Slide: 404 and 401
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 "A status code of 404 'Not Found' indicates that the recipient does not have the
@@ -157,7 +157,7 @@ so the recipient will not reply with the message. Another example is 401
 'Unauthorized', which means the requester is not allowed to request a particular
 resource.
 
-> 9. Technical Slide: 500 and maybe another?
+> 9: Technical Slide: 500 and maybe another?
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 "Finally, status codes that start with '5' mean that the recipient is having
@@ -168,7 +168,7 @@ processing is having issues fulfilling requests."
 "You really know your HTTP! Thanks for explaining that to me. I think I'm ready
 to deliver this package."
 
-> 10. Technical Slide: Up close view of the package with HTTP request on it
+> 10: Technical Slide: Up close view of the package with HTTP request on it
 
 Pat studied the package to find the address for the Puma Kingdom. He noticed
 that the host address said `rubyonrails.org`.

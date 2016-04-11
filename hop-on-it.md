@@ -3,7 +3,7 @@
 Pat and Pam returned to the KPS warehouse to prepare for the actual delivery.
 Pam explained the final steps.
 
-> 19. Technical Slide: Show packages flowing between requester (client) and
+> 19: Technical Slide: Show packages flowing between requester (client) and
 >     recipient (server), highlighting the path from client to server.
 
 Pam started, "As I mentioned, we have to deliver HTTP packages via the TCP
@@ -11,7 +11,7 @@ Turboline because they require TCP Assurance. TCP Assurance guarantees that the
 package will be delivered untampered in its entirety. Carriers and recipients
 accomplish this by acknowledging each other's messages.
 
-> 20. Technical Slide: 3 diagrams.
+> 20: Technical Slide: 3 diagrams.
 >
 >       1. Server responding normally with ACK and then response.
 >       2. Server response and ACK combined.
@@ -26,7 +26,7 @@ don't receive an acknowledgement package within a certain amount of time, then
 we'll try delivering again. We always make sure that the package ultimately
 arrives at its destination.
 
-> 21. Technical Slide: Multiple clients and multiple servers with the internet in
+> 21: Technical Slide: Multiple clients and multiple servers with the internet in
 >     the middle. Show "X" over paths to signal congestion. Maybe show traffic on
 >     a highway for metaphor.
 
@@ -38,7 +38,7 @@ Congestion Control Administration, or CCA, formed to regulate Turboline usage.
 CCA has strict guidelines to ensure that the Turboline doesn't become so
 overwhelmed that no package can be delivered.
 
-> 22. Technical Slide: Walkthrough of the TCP slow start with sliding window.
+> 22: Technical Slide: Walkthrough of the TCP slow start with sliding window.
 >     Show the diagram of client-to-server and show above that a sliding window
 >     and number.
 
@@ -63,7 +63,7 @@ among all carriers."
 "Right. Now, let's get our connection set up so we can deliver the package.
 We'll need the help of our coordinator Sam Sync for that."
 
-> 11. Illustration: Sam on the phone with Pat and Pam at the side
+> 11: Illustration: Sam on the phone with Pat and Pam at the side
 
 Pat and Pam walked over to Sam Sync's office in the warehouse. Pam greeted Sam
 while handing him the address for the Puma Kingdom, "Hello, Sam. We have a
@@ -75,27 +75,27 @@ Sam replied, "Hey, Pam! Sure thing. Let me give them a ring."
 Sam called the Puma Kingdom and milliseconds later a voice responded back,
 "Hello?"
 
-> 23. Technical Slide: Shrink Illustration 11. Place 3-way TCP handshake
+> 23: Technical Slide: Shrink Illustration 11. Place 3-way TCP handshake
 >     diagram above. Highlight SYN packet from Sam.
 
 "Hello, this is Sam Sync of KPS, I would like to schedule a delivery. We are
 ready to **synchronize** a connection with you."
 
-> 24. Technical Slide: Highlight ACK-SYN from Puma Kingdom with window size set.
+> 24: Technical Slide: Highlight ACK-SYN from Puma Kingdom with window size set.
 
 "One moment please… OK, we acknowledge your delivery request and are ready to
 synchronize as well. However, our receiving department is a little backed up at
 the moment. To prevent any issues with this delivery, we need you to keep your
 window size to one package please."
 
-> 25. Technical Slide: Highlight ACK from Sam.
+> 25: Technical Slide: Highlight ACK from Sam.
 
 "Roger that. We acknowledge your reply and window size request. We will have the
 delivery over there shortly."
 
 Sam hung up the phone and relayed the information from the call to Pat and Pam.
 
-> 12. Illustration: Pam addressing Pat. Pat could have a worried face.
+> 12: Illustration: Pam addressing Pat. Pat could have a worried face.
 
 Pam was unsurprised, "I figured they might limit the **flow** of packages. The
 Puma Kingdom is very popular. Well, this does change things slightly."
@@ -106,7 +106,7 @@ Puma Kingdom is very popular. Well, this does change things slightly."
 requested two resources. In addition to requesting the root resource `/`,
 they also wanted `/favicon.ico`. They're notorious for doing this.
 
-> 26. Technical Slide: TCP diagram again but with multiple packets and sequence
+> 26: Technical Slide: TCP diagram again but with multiple packets and sequence
 >     numbers.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -117,7 +117,7 @@ out of order. Your sequence number is 1 and mine is 2. Therefore, because they
 are limiting us to a window size of 1 initially, you'll have to deliver your
 package alone before I can deliver mine."
 
-> 12. Reuse Illustration
+> 12: Reuse Illustration
 
 Pat's eyes widened, "Oh, no! But how will I get there without your help. I've
 never used the TCP Turboline before."
@@ -131,7 +131,7 @@ board for a given address.
 
 "Perfect! Let's get you on the Turboline then!"
 
-> 13. Illustration: Pam seeing Pat off at the TCP Turboline train.
+> 13: Illustration: Pam seeing Pat off at the TCP Turboline train.
 
 Pat and Pam rushed over to the Turboline boarding station. Pam handed Pat a copy
 of the address, his sequence number, and his individual package, "Here is
@@ -160,7 +160,7 @@ to go and what to do.
 He remembered Pam's advice, though, and looked up to see a large screen with
 multiple addresses on it. "That must be the routing table," he said to himself.
 
-> 27. Technical Slide: Routing table with CIDR addresses and next hops.
+> 27: Technical Slide: Routing table with CIDR addresses and next hops.
 
 He ran over to get a better look. As he examined the table more closely, he
 became confused. "The Puma Kingdom's address isn't anywhere on that list. All
@@ -168,7 +168,7 @@ the addresses look different too. They have slashes with more numbers in them."
 Pat frantically looked back and forth from the table to the numerous trains in
 the hope that he would suddenly know what to do.
 
-> 14. Illustration: Pat speaking with attendant at kiosk
+> 14: Illustration: Pat speaking with attendant at kiosk
 
 As he began to feel dismayed, he saw a kiosk nearby with an attendant. He
 hurried over to the attendant and begged for assistance, "Hello. I'm new to the
@@ -187,7 +187,7 @@ Pat handed the attendant the address, and the attendant continued, "Ah. Your
 address is 192.30.252.153. That means you'll want to go to with train AS423
 which is for destinations in 192.30.0.0/16.
 
-> 28. Technical Slide: Explain dotted quad IP addresses (4 of 2^8).
+> 28: Technical Slide: Explain dotted quad IP addresses (4 of 2^8).
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 "See, there is an extensive number of router stations, and we can only store so
@@ -197,7 +197,7 @@ are four numbers that range from 0 to 255. That range comes from two to the
 power of 8, which is 256. So, we can use the slashes as a special way of
 specifying a more specific range for those four numbers together.
 
-> 29. Technical Slide: Explain CIDR. Expand acronym and show how masking works.
+> 29: Technical Slide: Explain CIDR. Expand acronym and show how masking works.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 "The slash is called a mask which means it prevents certain numbers from
@@ -215,7 +215,7 @@ again!"
 
 "No problem and good luck!"
 
-> 15. Illustration: Pat running to a train.
+> 15: Illustration: Pat running to a train.
 
 With a feeling of relief, Pat ran over to next train and boarded. The train then
 dashed off to the next router station.
@@ -227,7 +227,7 @@ train to train with greater ease. Pat was sure he would arrive at the Puma
 Kingdom soon. At one of his last stops, Pat confidently sauntered over to the
 next train only to find an attendant blocking the door.
 
-> 16. Illustration: Pat speaking with attendant blocking the way to the next
+> 16: Illustration: Pat speaking with attendant blocking the way to the next
 >     train.
 
 Pat approached the attendant, "Excuse me. I need to be on this train for my next
@@ -246,7 +246,7 @@ return back to your carrier."
 
 "Oh, no! Two to three seconds is too long, and why would I need to go back?"
 
-> 30. Technical Slide: Show packets backing up at a router buffer.
+> 30: Technical Slide: Show packets backing up at a router buffer.
 
 "Router stations themselves can only hold so many couriers. CCA guidelines
 dictate that to avoid congestion at stations, attendants must ask couriers after
@@ -255,7 +255,7 @@ a short while to leave and try their delivery later."
 "This is an extremely important package, though! Surely, there is something you
 can do. Is there another route by chance?"
 
-> 16. Reuse Illustration
+> 16: Reuse Illustration
 
 Pat quickly handed the attendant the address.
 
@@ -264,7 +264,7 @@ prefer couriers take the shortest route to their destination, but there are
 exceptions. It's a little longer route, but you can take train AS865 and follow
 the routing table as normal from the next station."
 
-> 15. Reuse Illustration
+> 15: Reuse Illustration
 
 "Really? That works for me. Thank you!"
 

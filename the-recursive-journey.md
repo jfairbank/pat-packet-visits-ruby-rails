@@ -1,6 +1,6 @@
 # The Recursive Journey
 
-> 5. Illustration: Pat and Pam walking toward UDP Express train
+> 5: Illustration: Pat and Pam walking toward UDP Express train
 
 As Pat and Pam exited the warehouse, Pat asked, "What is DNS?"
 
@@ -26,7 +26,7 @@ So, off they went to hop aboard the UDP Express to start their DNS journey.
 After several milliseconds, they arrived at the Resolver Kingdom. They found the
 nearest resolution office and stepped through the door.
 
-> 6. Illustration: Pat and Pam talking with Ren in his office
+> 6: Illustration: Pat and Pam talking with Ren in his office
 
 Pam greeted the office clerk, "Hello, Ren. My friend Pat and I need the address
 for a domain name."
@@ -43,7 +43,7 @@ to retrieve it from one of the authoritative DNS kingdoms."
 
 "Authoritative?" interjected Pat.
 
-> 7. Illustration: Ren explaining to Pat about DNS, holding a map with many
+> 7: Illustration: Ren explaining to Pat about DNS, holding a map with many
 >    dots for the authoritative DNS kingdoms
 
 Inferring Pat's lack of knowledge on DNS, Ren replied, "Yes. Because there
@@ -70,7 +70,7 @@ handed the address to the conductor and off they went again!
 
 ---
 
-> 8. Illustration: Large building with many little packets entering and exiting
+> 8: Illustration: Large building with many little packets entering and exiting
 
 Several milliseconds later, they arrived at Root Domain Kingdom A. As he
 stepped off the train, Pat noticed a large building in the distance and marveled
@@ -83,7 +83,7 @@ Pam answered with a smile, "Indeed, it is."
 They entered the building and joined one of the lines at the front desk. After a
 short time, a clerk motioned them forward.
 
-> 9. Illustration: Clerk handing Pat the slip of paper with addresses on it
+> 9: Illustration: Clerk handing Pat the slip of paper with addresses on it
 
 "Welcome to the Root Domain Kingdom," the clerk began. "How may I direct you?"
 
@@ -105,7 +105,7 @@ You'll have to ask one of those kingdoms for more help."
 Pam stopped Pat, speaking to the clerk, "Thank you so much for your help. We'll
 be on our way."
 
-> 10. Illustration: Pam speaking with Pat as they approach the UDP express again
+> 10: Illustration: Pam speaking with Pat as they approach the UDP express again
 
 Pam pulled Pat aside and said "Don't worry! This is how DNS works. We need to
 deliver this package soon, so let's get over to one of these NS kingdoms."
@@ -122,7 +122,7 @@ After another trip on the UDP Express they arrived at one of the org NS
 kingdoms. Just like the last time, they entered a large office and approached
 the front desk.
 
-> 9. Reuse Illustration
+> 9: Reuse Illustration
 
 The clerk greeted them, "Hello and thank you for coming to the A0 Org Kingdom.
 What can I do for you today?"
@@ -143,7 +143,7 @@ the paper. His smile slowly faded away.
 with `ns` followed by a number and then `.gratisdns.dk`. It seems like these
 DNS kingdoms keep giving us the runaround."
 
-> 10. Reuse Illustration
+> 10: Reuse Illustration
 
 "Not at all!" responded Pam. "Like I said, this is how DNS works. I promised I
 would explain everything, so let's board the train, and I'll clarify how DNS
@@ -151,13 +151,13 @@ works."
 
 ---
 
-> 11. Technical Slide: Graph of DNS structure
+> 11: Technical Slide: Graph of DNS structure
 
 Back on the train, Pam addressed Pat, "OK. I don't want you to be confused, so
 let's walk through DNS. DNS is a recursive and iterative system we use to
 determine addresses for domain names.
 
-> 12. Technical Slide: Path to resolver highlighted
+> 12: Technical Slide: Path to resolver highlighted
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 "If we don't already have a copy of the address, then normally we go to our
@@ -166,7 +166,7 @@ request for an address. What that means is that they will try whatever they need
 to do to obtain the address. If they don't have a copy of the address already,
 then they will take an _iterative_ process to find it from another kingdom.
 
-> 13. Technical Slide: Path to root domain kingdoms highlighted. Show
+> 13: Technical Slide: Path to root domain kingdoms highlighted. Show
 >     domain names with the extra dot at the end to indicate root domain.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -177,7 +177,7 @@ addresses and domain names. Therefore, it has a hierarchical structure that
 starts with the root domain kingdoms. The root domain kingdoms are responsible
 for storing addresses for the top level domain kingdoms.
 
-> 14. Technical Slide: Same path highlighted. Show list of TLDs.
+> 14: Technical Slide: Same path highlighted. Show list of TLDs.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 "Top level domains, or TLDs for short, are just categorical names used in domain
@@ -185,7 +185,7 @@ names. You've already seen `.org`, which is primarily used by organizations.
 Other popular TLDs are `.com`, `.net`, and `.io`, which startups love. There
 are numerous other TLDs as well.
 
-> 15. Technical Slide: Root domain handing back NS records. Have example NS
+> 15: Technical Slide: Root domain handing back NS records. Have example NS
 >     record text?
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -194,7 +194,7 @@ like referrals. The root domain kingdoms are essentially saying, 'I don't know
 where `rubyonrails.org` is, but I can direct you to someone that has a better
 shot at knowing.'
 
-> 16. Technical Slide: Zoom in on portion of graph with TLDs. Show normal server
+> 16: Technical Slide: Zoom in on portion of graph with TLDs. Show normal server
 >     registering domain names with NS servers and those NS servers' being
 >     registered with TLD servers. Show TLD server handing back NS records to
 >     the final server.
@@ -206,7 +206,7 @@ two NS kingdoms to advertise the `rubyonrails.org` address. In turn these NS
 kingdoms will register with the TLD kingdoms, so the TLD kingdoms can hand out
 referrals, or `NS` records, to them.
 
-> 17. Technical Slide: Highlight path to NS server. Show couple replies along
+> 17: Technical Slide: Highlight path to NS server. Show couple replies along
 >     path with 'A' and 'CNAME' responses. Show 'A' and 'CNAME' example
 >     responses up close too.
 
@@ -223,7 +223,7 @@ record is that if their address changes, they only need to update one `A` record
 for `rubyonrails.org`. The alias, `rubyonrailsftw.com`, will still work because
 it points to whatever address `rubyonrails.org` points to.
 
-> 18. Technical Slide: Flip graph upside down and show in a tree-like manner.
+> 18: Technical Slide: Flip graph upside down and show in a tree-like manner.
 >     Show costs/latency numbers along edges.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -251,13 +251,13 @@ after we get the address from the last kingdom."
 
 ---
 
-> 9. Reuse Illustration
+> 9: Reuse Illustration
 
 Pat and Pam finally arrived at one of the NS kingdoms. Like before, they entered
 a large building and met with one of the clerks. At long last, they obtained the
 address for `rubyonrails.org`. Pat was more than elated.
 
-> 10. Reuse Illustration
+> 10: Reuse Illustration
 
 Pat began, "Great! Now we have the address, let's hop back on the UDP Express
 to deliver the package!"
