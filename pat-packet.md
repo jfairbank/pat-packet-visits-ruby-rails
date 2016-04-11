@@ -1,5 +1,7 @@
 # Pat Packet
 
+> 1. Illustration: Pat Packet standing in front of KPS.
+
 Pat Packet is an eager, bright packet who is excited about his first job at KPS
 (Kernel Parcel Services). KPS is a large company that serves all the shipping
 needs of the Apple Pro continent, so Pat knows this is an amazing opportunity.
@@ -10,10 +12,12 @@ the renowned Puma Kingdom and maybe even meet its esteemed leader Ruby Rails.
 
 ---
 
-One day as Pat was returning from a delivery he overheard that Firechrome
+One day as Pat was returning from a delivery, he overheard that Firechrome
 Industries had just dropped off an important package destined for the Puma
 Kingdom for Ruby Rails herself! Pat immediately rushed to the office of his boss
 Benedict Buffer.
+
+> 2. Illustration: Pat Packet and Benedict in the office
 
 "I have to deliver this package!" exclaimed Pat.
 
