@@ -1,6 +1,6 @@
 # Pat Packet
 
-> 1. Illustration: Pat Packet standing in front of KPS.
+> 1: Illustration: Pat Packet standing in front of KPS.
 
 Pat Packet is an eager, bright packet who is excited about his first job at KPS
 (Kernel Parcel Services). KPS is a large company that serves all the shipping
@@ -17,7 +17,7 @@ Industries had just dropped off an important package destined for the Puma
 Kingdom for Ruby Rails herself! Pat immediately rushed to the office of his boss
 Benedict Buffer.
 
-> 2. Illustration: Pat Packet and Benedict in the office
+> 2: Illustration: Pat Packet and Benedict in the office
 
 "I have to deliver this package!" exclaimed Pat.
 
