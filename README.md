@@ -30,6 +30,11 @@ package.
 ## Legend
 
 <dl>
+  <dt>Package</dt>
+  <dd>
+    Technically, a packet, even though the main character is a packet too
+  </dd>
+
   <dt>Continent</dt>
   <dd>A physical IP-enabled device like a laptop or physical server</dd>
 
