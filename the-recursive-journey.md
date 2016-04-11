@@ -43,7 +43,7 @@ to retrieve it from one of the authoritative DNS kingdoms."
 
 "Authoritative?" interjected Pat.
 
-> 7. Illustration?: Ren explaining to Pat about DNS, holding a map with many
+> 7. Illustration: Ren explaining to Pat about DNS, holding a map with many
 >    dots for the authoritative DNS kingdoms
 
 Inferring Pat's lack of knowledge on DNS, Ren replied, "Yes. Because there
@@ -105,7 +105,7 @@ You'll have to ask one of those kingdoms for more help."
 Pam stopped Pat, speaking to the clerk, "Thank you so much for your help. We'll
 be on our way."
 
-> 10. Illustration?: Pam speaking with Pat as they approach the UDP express again
+> 10. Illustration: Pam speaking with Pat as they approach the UDP express again
 
 Pam pulled Pat aside and said "Don't worry! This is how DNS works. We need to
 deliver this package soon, so let's get over to one of these NS kingdoms."
