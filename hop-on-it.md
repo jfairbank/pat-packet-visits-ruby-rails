@@ -3,7 +3,7 @@
 Pat and Pam returned to the KPS warehouse to prepare for the actual delivery.
 Pam explained the final steps.
 
-> 19: Technical Slide: Show packages flowing between requester (client) and
+> 17: Technical Slide: Show packages flowing between requester (client) and
 >     recipient (server), highlighting the path from client to server.
 
 Pam started, "As I mentioned, we have to deliver HTTP packages via the TCP
@@ -11,12 +11,11 @@ Turboline because they require TCP Assurance. TCP Assurance guarantees that the
 package will be delivered untampered in its entirety. Carriers and recipients
 accomplish this by acknowledging each other's messages.
 
-> 20: Technical Slide: 3 diagrams.
+> 18: Technical Slide: 3 diagrams.
 >
 >       1. Server responding normally with ACK and then response.
->       2. Server response and ACK combined.
->       3. Show path back with question mark or timeout. And show client sending
->          again.
+>       2. Show path back with question mark or timeout. And show client
+>          sending again.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 "After we deliver an HTTP package, in addition to the reply message, the
@@ -26,7 +25,7 @@ don't receive an acknowledgement package within a certain amount of time, then
 we'll try delivering again. We always make sure that the package ultimately
 arrives at its destination.
 
-> 21: Technical Slide: Multiple clients and multiple servers with the internet in
+> 19: Technical Slide: Multiple clients and multiple servers with the internet in
 >     the middle. Show "X" over paths to signal congestion. Maybe show traffic on
 >     a highway for metaphor.
 
@@ -38,7 +37,7 @@ Congestion Control Administration, or CCA, formed to regulate Turboline usage.
 CCA has strict guidelines to ensure that the Turboline doesn't become so
 overwhelmed that no package can be delivered.
 
-> 22: Technical Slide: Walkthrough of the TCP slow start with sliding window.
+> 20: Technical Slide: Walkthrough of the TCP slow start with sliding window.
 >     Show the diagram of client-to-server and show above that a sliding window
 >     and number.
 
@@ -75,20 +74,19 @@ Sam replied, "Hey, Pam! Sure thing. Let me give them a ring."
 Sam called the Puma Kingdom and milliseconds later a voice responded back,
 "Hello?"
 
-> 23: Technical Slide: Shrink Illustration 11. Place 3-way TCP handshake
->     diagram above. Highlight SYN packet from Sam.
+> 21: Technical Slide: 3-way TCP handshake for Sam and Puma Kingdom.
 
 "Hello, this is Sam Sync of KPS, I would like to schedule a delivery. We are
 ready to **synchronize** a connection with you."
 
-> 24: Technical Slide: Highlight ACK-SYN from Puma Kingdom with window size set.
+> 22: Technical Slide: Highlight ACK-SYN from Puma Kingdom with window size set.
 
 "One moment please… OK, we acknowledge your delivery request and are ready to
 synchronize as well. However, our receiving department is a little backed up at
 the moment. To prevent any issues with this delivery, we need you to keep your
 window size to one package please."
 
-> 25: Technical Slide: Highlight ACK from Sam.
+> 23: Technical Slide: Highlight ACK from Sam.
 
 "Roger that. We acknowledge your reply and window size request. We will have the
 delivery over there shortly."
@@ -106,7 +104,7 @@ Puma Kingdom is very popular. Well, this does change things slightly."
 requested two resources. In addition to requesting the root resource `/`,
 they also wanted `/favicon.ico`. They're notorious for doing this.
 
-> 26: Technical Slide: TCP diagram again but with multiple packets and sequence
+> 24: Technical Slide: TCP diagram again but with multiple packets and sequence
 >     numbers.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -148,9 +146,9 @@ the routing tables use CIDR addresses, not normal addresses…
 
 ---
 
->  14. Illustration: Router station (like a subway station) with several
->  couriers (packets like Pat). Have a big screen with illegible text hanging
->  from the ceiling. Pat looking up toward the screen.
+> 14: Illustration: Router station (like a subway station) with several
+> couriers (packets like Pat). Have a big screen with illegible text hanging
+> from the ceiling. Pat looking up toward the screen.
 
 After several milliseconds, Pat reached his first stop. As he disembarked from
 the train, he became quickly overwhelmed. He could not believe the number of
@@ -160,7 +158,7 @@ to go and what to do.
 He remembered Pam's advice, though, and looked up to see a large screen with
 multiple addresses on it. "That must be the routing table," he said to himself.
 
-> 27: Technical Slide: Routing table with CIDR addresses and next hops.
+> 25: Technical Slide: Routing table with CIDR addresses and next hops.
 
 He ran over to get a better look. As he examined the table more closely, he
 became confused. "The Puma Kingdom's address isn't anywhere on that list. All
@@ -168,7 +166,7 @@ the addresses look different too. They have slashes with more numbers in them."
 Pat frantically looked back and forth from the table to the numerous trains in
 the hope that he would suddenly know what to do.
 
-> 14: Illustration: Pat speaking with attendant at kiosk
+> 15: Illustration: Pat speaking with attendant at kiosk
 
 As he began to feel dismayed, he saw a kiosk nearby with an attendant. He
 hurried over to the attendant and begged for assistance, "Hello. I'm new to the
@@ -187,7 +185,7 @@ Pat handed the attendant the address, and the attendant continued, "Ah. Your
 address is 192.30.252.153. That means you'll want to go to with train AS423
 which is for destinations in 192.30.0.0/16.
 
-> 28: Technical Slide: Explain dotted quad IP addresses (4 of 2^8).
+> 26: Technical Slide: Explain dotted quad IP addresses (4 of 2^8).
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 "See, there is an extensive number of router stations, and we can only store so
@@ -197,7 +195,7 @@ are four numbers that range from 0 to 255. That range comes from two to the
 power of 8, which is 256. So, we can use the slashes as a special way of
 specifying a more specific range for those four numbers together.
 
-> 29: Technical Slide: Explain CIDR. Expand acronym and show how masking works.
+> 27: Technical Slide: Explain CIDR. Expand acronym and show how masking works.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 "The slash is called a mask which means it prevents certain numbers from
@@ -215,7 +213,7 @@ again!"
 
 "No problem and good luck!"
 
-> 15: Illustration: Pat running to a train.
+> 16: Illustration: Pat running to a train.
 
 With a feeling of relief, Pat ran over to next train and boarded. The train then
 dashed off to the next router station.
@@ -227,7 +225,7 @@ train to train with greater ease. Pat was sure he would arrive at the Puma
 Kingdom soon. At one of his last stops, Pat confidently sauntered over to the
 next train only to find an attendant blocking the door.
 
-> 16: Illustration: Pat speaking with attendant blocking the way to the next
+> 17: Illustration: Pat speaking with attendant blocking the way to the next
 >     train.
 
 Pat approached the attendant, "Excuse me. I need to be on this train for my next
@@ -246,7 +244,7 @@ return back to your carrier."
 
 "Oh, no! Two to three seconds is too long, and why would I need to go back?"
 
-> 30: Technical Slide: Show packets backing up at a router buffer.
+> 28: Technical Slide: Show packets backing up at a router buffer.
 
 "Router stations themselves can only hold so many couriers. CCA guidelines
 dictate that to avoid congestion at stations, attendants must ask couriers after
@@ -255,7 +253,7 @@ a short while to leave and try their delivery later."
 "This is an extremely important package, though! Surely, there is something you
 can do. Is there another route by chance?"
 
-> 16: Reuse Illustration
+> 17: Reuse Illustration
 
 Pat quickly handed the attendant the address.
 
@@ -264,7 +262,7 @@ prefer couriers take the shortest route to their destination, but there are
 exceptions. It's a little longer route, but you can take train AS865 and follow
 the routing table as normal from the next station."
 
-> 15: Reuse Illustration
+> 16: Reuse Illustration
 
 "Really? That works for me. Thank you!"
 

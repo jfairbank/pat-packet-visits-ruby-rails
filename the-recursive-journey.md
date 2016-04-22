@@ -151,13 +151,13 @@ works."
 
 ---
 
-> 11: Technical Slide: Graph of DNS structure
+> 7: Technical Slide: Graph of DNS structure
 
 Back on the train, Pam addressed Pat, "OK. I don't want you to be confused, so
 let's walk through DNS. DNS is a recursive and iterative system we use to
 determine addresses for domain names.
 
-> 12: Technical Slide: Path to resolver highlighted
+> 8: Technical Slide: Path to resolver highlighted
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 "If we don't already have a copy of the address, then normally we go to our
@@ -166,8 +166,7 @@ request for an address. What that means is that they will try whatever they need
 to do to obtain the address. If they don't have a copy of the address already,
 then they will take an _iterative_ process to find it from another kingdom.
 
-> 13: Technical Slide: Path to root domain kingdoms highlighted. Show
->     domain names with the extra dot at the end to indicate root domain.
+> 9: Technical Slide: Path to root domain kingdoms highlighted.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 "You and I have undertaken the iterative process this time so you can understand
@@ -177,7 +176,7 @@ addresses and domain names. Therefore, it has a hierarchical structure that
 starts with the root domain kingdoms. The root domain kingdoms are responsible
 for storing addresses for the top level domain kingdoms.
 
-> 14: Technical Slide: Same path highlighted. Show list of TLDs.
+> 10: Technical Slide: Same path highlighted. Show list of TLDs.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 "Top level domains, or TLDs for short, are just categorical names used in domain
@@ -185,8 +184,7 @@ names. You've already seen `.org`, which is primarily used by organizations.
 Other popular TLDs are `.com`, `.net`, and `.io`, which startups love. There
 are numerous other TLDs as well.
 
-> 15: Technical Slide: Root domain handing back NS records. Have example NS
->     record text?
+> 11: Technical Slide: Root domain handing back NS records.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 "The root domain kingdoms hand out `NS` records to these TLD kingdoms, which are
@@ -194,19 +192,23 @@ like referrals. The root domain kingdoms are essentially saying, 'I don't know
 where `rubyonrails.org` is, but I can direct you to someone that has a better
 shot at knowing.'
 
-> 16: Technical Slide: Zoom in on portion of graph with TLDs. Show normal server
+> 12: Technical Slide: Zoom in on portion of graph with TLDs. Show normal server
 >     registering domain names with NS servers and those NS servers' being
->     registered with TLD servers. Show TLD server handing back NS records to
->     the final server.
+>     registered with TLD servers.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 "Next, the TLD kingdoms do something similar. Usually, a TLD kingdom only knows
 about NS kingdoms. Regular kingdoms like the Puma Kingdom will employ at least
 two NS kingdoms to advertise the `rubyonrails.org` address. In turn these NS
-kingdoms will register with the TLD kingdoms, so the TLD kingdoms can hand out
-referrals, or `NS` records, to them.
+kingdoms will register with the TLD kingdoms.
 
-> 17: Technical Slide: Highlight path to NS server. Show couple replies along
+> 13: Technical Slide: Show TLD server handing back NS records to the final server.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Then, when a request comes to the TLD kingdoms, they can hand back referral NS
+records to the NS kingdoms that know about the final address.
+
+> 14: Technical Slide: Highlight path to NS server. Show couple replies along
 >     path with 'A' and 'CNAME' responses. Show 'A' and 'CNAME' example
 >     responses up close too.
 
@@ -223,19 +225,22 @@ record is that if their address changes, they only need to update one `A` record
 for `rubyonrails.org`. The alias, `rubyonrailsftw.com`, will still work because
 it points to whatever address `rubyonrails.org` points to.
 
-> 18: Technical Slide: Flip graph upside down and show in a tree-like manner.
->     Show costs/latency numbers along edges.
+> 15: Technical Slide: Final graph showing hierarchy.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 "Therefore, you see that the DNS kingdoms are structured in a distributed,
 hierarchical manner. They are recursive in that the higher levels of the system
 will yield to the lower levels to eventually get an address for a domain name.
 This allows addresses to be stored in a saner, more efficient manner, albeit at
-the cost of more time to retrieve an address. This delay in time to obtain an
-address, also known as latency, is also why higher levels like the resolver will
-save a copy of the address for a while after they retrieve it. If the resolver
-receives another request for the address, then they can use their copy and avoid
-the extra latency to retrieve it from an authoritative kingdom."
+the cost of more time to retrieve an address.
+
+> 16: Technical Slide: Add clocks to paths.
+
+This delay in time to obtain an address, also known as latency, is also why
+higher levels like the resolver will save a copy of the address for a while
+after they retrieve it. If the resolver receives another request for the
+address, then they can use their copy and avoid the extra latency to retrieve it
+from an authoritative kingdom."
 
 "Wow! It all makes sense now. If all the kingdoms stored all the addresses, then
 that would require a lot of storage. It would also complicate keeping addresses

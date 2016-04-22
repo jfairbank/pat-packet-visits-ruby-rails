@@ -1,6 +1,6 @@
 # Ruby Rails
 
-> 17: Illustration: 2 options based on feasibility and time to draw
+> 18: Illustration: 2 options based on feasibility and time to draw
 >     * Split: leftside Pat looking out window at Puma Kingdom in distance and
 >       right side Pat looking up at really large office building
 >     * Or just Pat looking up at really large office building.
@@ -19,7 +19,7 @@ and burst through the front door with a grin ear-to-ear. Inside, he used the
 directory to determine the location of her office, the top floor, of course. He
 hopped on the elevator and shot straight to the top of the building.
 
-> 18: Illustration: Pat speaking with receptionist in lobby to Ruby Rails' office.
+> 19: Illustration: Pat speaking with receptionist in lobby to Ruby Rails' office.
 
 At the top level, he exited the elevator and greeted Ruby Rails' receptionist,
 "Hello. I have an important package for Ruby Rails!"
@@ -31,21 +31,21 @@ you now."
 
 "Thanks!"
 
-> 19: Illustration: Pat speaking with Ruby Rails in her office.
+> 20: Illustration: Pat speaking with Ruby Rails in her office.
 
 Pat braced himself and opened the office door. As he entered, he saw Ruby Rails
 before him. In awe, he stuttered through a greeting, "Ruby Rails, it's an honor
 to meet you in person. My name is Pat Packet. I have a package for you from
 Firechrome Industries in the Apple Pro continent." Pat reached out the package.
 
-> 10: Reuse Technical Slide
+> 6: Reuse Technical Slide
 
 "Well, hello, Pat. It's a pleasure to meet you as well," replied Ruby. "That
 looks like an important package." Ruby accepted the package and read through the
 HTTP message. "I see, so they need the root resource. We can definitely help
 them with that. I'll send the package to my HCO."
 
-> 19: Reuse Illustration
+> 20: Reuse Illustration
 
 "Excuse me. What is an HCO?"
 
@@ -65,12 +65,12 @@ we will see each other again."
 
 "Thank you again, Ruby Rails. I look forward to it!"
 
-> 18: Reuse Illustration maybe
+> 19: Reuse Illustration maybe
 
 Pat left Ruby Rails' office. He stopped to let the receptionist stamp an ACK
 symbol on the response package.
 
-> 20: Illustration: Pat holding the response package and looking confident.
+> 21: Illustration: Pat holding the response package and looking confident.
 
 Pat returned to the processing station with a smile on his face. Not only had he
 met Ruby Rails, but he had gained a wealth of knowledge about WAN delivery. He
