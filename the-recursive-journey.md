@@ -52,7 +52,10 @@ records for every address. Therefore, the actual domain name records are
 distributed among the authoritative kingdoms. Authoritative means they are the
 final authority on the address for a domain name. We only keep copies of
 addresses as time and storage in our file cabinets allow.
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+> 6: Reuse Illustration
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 "Say, we're a little short-staffed today. Would you mind finding the address at
 its authoritative kingdom? Normally, we retrieve the address from the
 appropriate kingdom while you wait here. However, this would be a great
