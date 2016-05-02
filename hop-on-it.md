@@ -12,10 +12,6 @@ package will be delivered untampered in its entirety. Carriers and recipients
 accomplish this by acknowledging each other's messages.
 
 > 18: Technical Slide: 3 diagrams.
->
->       1. Server responding normally with ACK and then response.
->       2. Show path back with question mark or timeout. And show client
->          sending again.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 "After we deliver an HTTP package, in addition to the reply message, the
@@ -26,9 +22,7 @@ acknowledgement package within a certain amount of time, then we assume that
 they didn't receive the package, so we'll try delivering again. We always make
 sure that the package ultimately arrives at its destination.
 
-> 19: Technical Slide: Multiple clients and multiple servers with the internet in
->     the middle. Show "X" over paths to signal congestion. Maybe show traffic on
->     a highway for metaphor.
+> 19: Technical Slide: Congestion
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 "However, because HTTP packages are so popular and because there are many other
@@ -39,8 +33,6 @@ CCA has strict guidelines to ensure that the Turboline doesn't become so
 overwhelmed that no package can be delivered.
 
 > 20: Technical Slide: Walkthrough of the TCP slow start with sliding window.
->     Show the diagram of client-to-server and show above that a sliding window
->     and number.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 "When a carrier needs to deliver a new package, they have to schedule the
