@@ -1,9 +1,6 @@
 # Ruby Rails
 
-> 18: Illustration: 2 options based on feasibility and time to draw
->     * Split: leftside Pat looking out window at Puma Kingdom in distance and
->       right side Pat looking up at really large office building
->     * Or just Pat looking up at really large office building.
+> 18: Illustration: Pat looking up at really large office building.
 
 Pat could not contain his excitement as the train approached the Puma Kingdom.
 He glued his eyes to the window and marveled at the beauty and vast size of the
@@ -53,7 +50,7 @@ them with that. I'll send the package to my HCO."
 root resource."
 
 Ruby inserted the package into a tube on the wall and pushed a button. A few
-milliseconds later, a new package came down the tube. Ruby grabbed it, handing
+milliseconds later, a new package came down the tube.  Ruby grabbed it, handing
 it to Pat, "And here you go. A fresh HTTP response package for Firechrome
 Industries."
 

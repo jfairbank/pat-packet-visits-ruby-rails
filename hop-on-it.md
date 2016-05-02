@@ -19,11 +19,12 @@ accomplish this by acknowledging each other's messages.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 "After we deliver an HTTP package, in addition to the reply message, the
-recipient will also send back an acknowledgement package. Sometimes, they'll
-combine the HTTP response and acknowledgement packages to save on postage. If we
-don't receive an acknowledgement package within a certain amount of time, then
-we'll try delivering again. We always make sure that the package ultimately
-arrives at its destination.
+recipient will also send back an acknowledgement package to let us know that
+they received the package. Sometimes, they'll combine the HTTP response and
+acknowledgement packages to save on postage. If we don't receive an
+acknowledgement package within a certain amount of time, then we assume that
+they didn't receive the package, so we'll try delivering again. We always make
+sure that the package ultimately arrives at its destination.
 
 > 19: Technical Slide: Multiple clients and multiple servers with the internet in
 >     the middle. Show "X" over paths to signal congestion. Maybe show traffic on
@@ -182,8 +183,8 @@ addresses."
 technique of describing multiple addresses. Let's see your address."
 
 Pat handed the attendant the address, and the attendant continued, "Ah. Your
-address is 192.30.252.153. That means you'll want to go to with train AS423
-which is for destinations in 192.30.0.0/16.
+address is 192.30.252.153. That means you'll want to go with train AS423 which
+is for destinations in 192.30.0.0/16.
 
 > 26: Technical Slide: Explain dotted quad IP addresses (4 of 2^8).
 

@@ -16,8 +16,7 @@ Pat piped, "Yes! It's for Ruby Rails too!"
 Pam echoed Pat's enthusiasm, "Great! I was just sorting through the packages
 to get what we need."
 
-> 4: Illustration: Pat and Pam looking at a package together (maybe have an
->    HTTP message on it)
+> 4: Illustration: Pat and Pam looking at a package together
 
 Pat noticed the packages were different from what he had delivered in the past.
 Some of the packages had similar looking messages with uppercase words like GET
@@ -25,6 +24,8 @@ and POST. Other messages were completely garbled.
 
 "So what kind of packages are these?" asked Pat, "I can understand most of
 them because they follow a pattern, but others look like nonsense."
+
+> Technical Slide: WAN and HTTP
 
 Pam answered, "In the world of WAN distribution — and even LAN — packages
 typically conform to a specific protocol for their messages. I'm sure you're
@@ -81,8 +82,8 @@ multiple addresses saved in their account at a store, then they can use a DELETE
 request to remove one of those addresses."
 
 "I see. So methods make a requester's intent more precise, but I'm still
-confused by the headers. What are the 'extra information or limitations' you
-mentioned?"
+confused by the headers. What did you mean by 'extra information or limitations'
+earlier?"
 
 > 3: Technical Slide: List of common headers. Point out key and value in one of
 >    the headers.
@@ -136,10 +137,10 @@ simply three-digit numbers followed by a descriptive phrase.
 means everything is good with the request package, so the recipient can reply
 with the requested information.
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-"A status code of 304 'Not Modified' means the request package is for the same
-resource and that resource hasn't changed since it was last sent to the
-requester. This allows the recipient to avoid resending the message body and to
-respond more quickly to the requester.
+"A status code of 304 'Not Modified' means the request package is for a resource
+that the requester already received before and that the resource hasn't changed
+since it was last sent. This allows the recipient to avoid resending the
+message body and to respond more quickly to the requester.
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 "A status code of 404 'Not Found' indicates that the recipient does not have the
 requested resource, so they cannot fulfill the request. In fact, any status code

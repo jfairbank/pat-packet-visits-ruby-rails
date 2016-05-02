@@ -68,6 +68,8 @@ done it before, so you'll be in good hands."
 continued, "Here is the address for the Root Domain Kingdom A. That should be a
 good place to start."
 
+> 5: Reuse Illustration
+
 Pat and Pam left the resolver office and hopped back on the UDP Express. Pat
 handed the address to the conductor and off they went again!
 
@@ -244,6 +246,8 @@ higher levels like the resolver will save a copy of the address for a while
 after they retrieve it. If the resolver receives another request for the
 address, then they can use their copy and avoid the extra latency to retrieve it
 from an authoritative kingdom."
+
+> Technical Slide
 
 "Wow! It all makes sense now. If all the kingdoms stored all the addresses, then
 that would require a lot of storage. It would also complicate keeping addresses
